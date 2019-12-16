@@ -14,3 +14,4 @@ with open("test.txt","r") as file:
     print(fileName)
 
     fileDrive = drive.CreateFile({'title':fileName})
+    fileDrive.SetContentString(file.read())
