@@ -12,3 +12,5 @@ with open("test.txt","r") as file:
 	# extracted file name
     fileName = os.path.basename(args["file"])
     print(fileName)
+
+    fileDrive = drive.CreateFile({'title':fileName})
