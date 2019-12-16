@@ -15,3 +15,8 @@ with open("test.txt","r") as file:
 
     fileDrive = drive.CreateFile({'title':fileName})
     fileDrive.SetContentString(file.read())
+
+    print("Uploading ...")
+    fileDrive.Upload()
+
+print("File ",fileName," uploaded successfully")
