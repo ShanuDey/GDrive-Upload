@@ -1,3 +1,5 @@
+![](https://github.com/ShanuDey/GDrive-Upload/workflows/Python%20application/badge.svg)
+
 # GDrive Upload
 
 This python script will upload file to google drive using python.
