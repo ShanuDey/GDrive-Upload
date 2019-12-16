@@ -1,6 +1,13 @@
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 import os
+import argparse
+
+# argparser
+argParser = argparse.ArgumentParser()
+argParser.add_argument("-f","--file", required=True, help="Select the File")
+args = vars(argParser.parse_args())
+print("args = ",args)
 
 # Login
 gLogin = GoogleAuth()
