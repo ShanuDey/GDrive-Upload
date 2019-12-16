@@ -9,4 +9,6 @@ drive = GoogleDrive(gLogin)
 
 
 with open("test.txt","r") as file:
-	print(file.read())
+	# extracted file name
+    fileName = os.path.basename(args["file"])
+    print(fileName)
