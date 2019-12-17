@@ -1,2 +1,9 @@
+# credential json file
 *.json
+
+# test files
 test.txt
+
+# IDE support files
+.idea/*
+
