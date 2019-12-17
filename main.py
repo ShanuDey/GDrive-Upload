@@ -5,7 +5,7 @@ import argparse
 
 # argparser
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-f","--file", required=True, help="Select the File")
+argParser.add_argument("file", help="select the file to be uploaded")
 args = vars(argParser.parse_args())
 print("args = ",args)
 
