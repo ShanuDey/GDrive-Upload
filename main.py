@@ -14,16 +14,11 @@ gLogin = GoogleAuth()
 gLogin.LocalWebserverAuth()
 drive = GoogleDrive(gLogin)
 
+fileName = os.path.basename(args["file"])
+print("file name = ", fileName)
 
-with open(args["file"],"r") as file:
-	# extracted file name
-    fileName = os.path.basename(args["file"])
-    print(fileName)
-
-    fileDrive = drive.CreateFile({'title':fileName})
-    fileDrive.SetContentString(file.read())
-
-    print("Uploading ...")
-    fileDrive.Upload()
+fileDrive = drive.CreateFile({'title':fileName})
+fileDrive.SetContentFile(args["file"])
+fileDrive.Upload()
 
 print("File ",fileName," uploaded successfully")
