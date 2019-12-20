@@ -16,5 +16,5 @@ This python script will upload file to google drive using python.
 	- Set Oauth and give a name
 	-  download credential and rename it to ```client_secrets.json```
 - Run ```python main.py -h``` for help
-- For upload file ```python main.py -f file```  
+- For upload file ```python main.py filePath```
 - Enjoy
